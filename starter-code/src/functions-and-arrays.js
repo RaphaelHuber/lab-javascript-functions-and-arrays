@@ -55,19 +55,6 @@ function averageNumbers(arr) {
   }
 }
 
-function averageWordLength (arr) {
-  if (arr.length === 0) {
-    return undefined;
-  } else {
-    let total = 0;
-    for (let i = 0; i < arr.length; i += 1) {
-      total += arr[i].length;
-    }
-    let average = total / arr.length;
-    return average;
-  }
-}
-
 var numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 // Array of Strings
@@ -84,6 +71,19 @@ var wordsArr = [
   'palace'
 ];
 
+function averageWordLength (arr) {
+  if (arr.length === 0) {
+    return undefined;
+  } else {
+    let total = 0;
+    for (let i = 0; i < arr.length; i += 1) {
+      total += arr[i].length;
+    }
+    let average = total / arr.length;
+    return average;
+  }
+}
+
 // Unique Arrays
 var wordsUnique = [
   'crab',
@@ -98,6 +98,20 @@ var wordsUnique = [
   'simple',
   'bring'
 ];
+
+function uniquifyArray(arr) {
+  if (arr.length === 0) {
+    return undefined;
+  } else {
+    let uniqueArr = [];
+    for (let i = 0; i < arr.length; i += 1) {
+      if (arr[i] === 0) {
+        uniqueArr = uniqueArr.push(uniqueArr[i]);
+      }
+    }
+  }   
+}
+
 
 // Finding Elements
 var wordsFind = [
